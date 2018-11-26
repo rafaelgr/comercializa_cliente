@@ -6,7 +6,7 @@ const Pack = require('./package.json');
 
 Dotenv.config();
 
-var apiPort = process.env.BASE_PORT || 8088;
+var apiPort = process.env.BASE_PORT || 8089;
 
 App.listen(apiPort, () => {
     Winston.info(Pack.name + " VRS: " + Pack.version);
