@@ -8,7 +8,12 @@ Dotenv.config();
 
 router.get('/', (req, res) => {
     var config = {
-        urlApi: process.env.BASE_URLAPI || 'http://localhost:5000'
+        urlApi: process.env.BASE_URLAPI || 'http://localhost:5000',
+        one_push_url: process.env.ONE_PUSH_URL,
+        one_app_id: process.env.ONE_APP_ID,
+        one_api_key: process.env.ONE_APP_KEY,
+        mailjet_api_key: process.env.MAILJET_API_KEY,
+        mailjet_api_secret: process.env.MAILJET_API_SECRET
     }
     res.json(config);
 });

@@ -18,6 +18,7 @@ app.use(Express.static(__dirname + "/public"));
 
 app.use('/version', require('./api/version/version_controller'));
 app.use('/config', require('./api/config/config_controller'));
+app.use('/mailjet', require('./api/mailjet/mailjet_controller'));
 
 
 app.use((req, res, next) => {
