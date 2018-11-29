@@ -9,6 +9,7 @@ var Mailjet = require('node-mailjet').connect(process.env.MAILJET_API_KEY, proce
 
 router.post('/', (req, res, next) => {
     var data = req.body;
+    data.Recipients = [{"Email": process.env.MAILJET_EMAIL_TO}];
     var sendEmail = Mailjet.post('send');
     sendEmail
         .request(data)
