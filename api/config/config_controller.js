@@ -12,7 +12,7 @@ router.get('/', (req, res) => {
         urlClient: process.env.BASE_URLCLIENT || "",
         one_push_url: process.env.ONE_PUSH_URL,
         one_app_id: process.env.ONE_APP_ID,
-        one_api_key: process.env.ONE_APP_KEY,
+        one_api_key: process.env.ONE_API_KEY,
         mailjet_api_key: process.env.MAILJET_API_KEY,
         mailjet_api_secret: process.env.MAILJET_API_SECRET
     }
