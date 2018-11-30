@@ -9,6 +9,7 @@ Dotenv.config();
 router.get('/', (req, res) => {
     var config = {
         urlApi: process.env.BASE_URLAPI || 'http://localhost:5000',
+        urlClient: process.env.BASE_URLCLIENT || "",
         one_push_url: process.env.ONE_PUSH_URL,
         one_app_id: process.env.ONE_APP_ID,
         one_api_key: process.env.ONE_APP_KEY,
